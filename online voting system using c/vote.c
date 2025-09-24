@@ -4,8 +4,8 @@
 
 #define MAX_C 11
 // defining max number of candidates
+//structure of the candidates 
 
-// Structure of candidate
 typedef struct Candidate {
     char name[50];
     int votes;
@@ -118,7 +118,7 @@ void displayAllCandidates()
     printf("\n");
 }
 
-// function to get votes
+
 void getVotes(int voterCount)
 {
     displayAllCandidates();
@@ -137,7 +137,7 @@ void getVotes(int voterCount)
     }
 }
 
-// function to get results
+
 void getResults()
 {
     int maxVotes = 0;
@@ -171,3 +171,4 @@ void getResults()
         printf("No winner\n");
     }
 }
+
